@@ -1,9 +1,9 @@
 #!/bin/sh
 
-/usr/local/mysql/support-files/mysql.server stop
+sudo /usr/local/mysql/support-files/mysql.server stop
 wait
 
-apachectl stop
+sudo apachectl stop
 wait
 
 echo "Done"

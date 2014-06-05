@@ -25,5 +25,11 @@
 - (IBAction)stopWebDev:(id)sender;
 
 - (void)executeScript:(NSString*)pathToScript;
+- (void)executeSecureScript:(NSString*)pathToScript;
+
+- (BOOL)runProcessAsAdministrator:(NSString*)scriptPath
+                    withArguments:(NSArray *)arguments
+                           output:(NSString **)output
+                 errorDescription:(NSString **)errorDescription;
 
 @end
