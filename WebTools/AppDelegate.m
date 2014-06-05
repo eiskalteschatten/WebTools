@@ -74,7 +74,12 @@
                                             output:&output
                                   errorDescription:&processErrorDescription];
     
-    [_logView insertIntoLog:output];
+    if (!success) {
+        [_logView insertIntoLog:processErrorDescription];
+    }
+    else {
+        [_logView insertIntoLog:output];
+    }
 }
 
 - (BOOL)runProcessAsAdministrator:(NSString*)scriptPath
