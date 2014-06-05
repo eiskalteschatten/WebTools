@@ -178,6 +178,13 @@
                         <action selector="openWindow:" target="DtK-q4-bKK" id="wfl-eh-38a"/>
                     </connections>
                 </menuItem>
+                <menuItem isSeparatorItem="YES" id="VHw-c3-JbB"/>
+                <menuItem title="About WebTools" id="Ype-9x-2Lb">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="orderFrontStandardAboutPanel:" target="-1" id="CJs-V6-zHQ"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Quit" id="N5A-Dy-GYl">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
