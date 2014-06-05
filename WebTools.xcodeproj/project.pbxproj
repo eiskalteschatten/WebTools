@@ -84,6 +84,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		935747A31940E9AA0097B237 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				939E1B1B1940BF1200BFC65C /* start-webdev.sh */,
+				939E1B1C1940BF1200BFC65C /* stop-webdev.sh */,
+				939E1B1F1940C11600BFC65C /* Jpegoptim.sh */,
+				939E1B211940C12400BFC65C /* Optipng.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
 		939E1ADB1940BDE900BFC65C = {
 			isa = PBXGroup;
 			children = (
@@ -126,10 +137,7 @@
 		939E1AED1940BDE900BFC65C /* WebTools */ = {
 			isa = PBXGroup;
 			children = (
-				939E1B1B1940BF1200BFC65C /* start-webdev.sh */,
-				939E1B1C1940BF1200BFC65C /* stop-webdev.sh */,
-				939E1B1F1940C11600BFC65C /* Jpegoptim.sh */,
-				939E1B211940C12400BFC65C /* Optipng.sh */,
+				935747A31940E9AA0097B237 /* Scripts */,
 				939E1AF91940BDE900BFC65C /* AppDelegate.h */,
 				939E1AFA1940BDE900BFC65C /* AppDelegate.m */,
 				939E1B231940C96700BFC65C /* LogViewController.h */,
@@ -488,6 +496,7 @@
 				939E1B171940BDE900BFC65C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		939E1B181940BDE900BFC65C /* Build configuration list for PBXNativeTarget "WebToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				939E1B1A1940BDE900BFC65C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
