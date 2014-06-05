@@ -18,6 +18,11 @@
 		939E1B081940BDE900BFC65C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939E1AE71940BDE900BFC65C /* Cocoa.framework */; };
 		939E1B101940BDE900BFC65C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B0E1940BDE900BFC65C /* InfoPlist.strings */; };
 		939E1B121940BDE900BFC65C /* WebToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E1B111940BDE900BFC65C /* WebToolsTests.m */; };
+		939E1B1D1940BF1200BFC65C /* start-webdev.sh in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B1B1940BF1200BFC65C /* start-webdev.sh */; };
+		939E1B1E1940BF1200BFC65C /* stop-webdev.sh in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B1C1940BF1200BFC65C /* stop-webdev.sh */; };
+		939E1B201940C11600BFC65C /* Jpegoptim.sh in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B1F1940C11600BFC65C /* Jpegoptim.sh */; };
+		939E1B221940C12400BFC65C /* Optipng.sh in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B211940C12400BFC65C /* Optipng.sh */; };
+		939E1B251940C96700BFC65C /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E1B241940C96700BFC65C /* LogViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,12 @@
 		939E1B0D1940BDE900BFC65C /* WebToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebToolsTests-Info.plist"; sourceTree = "<group>"; };
 		939E1B0F1940BDE900BFC65C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		939E1B111940BDE900BFC65C /* WebToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebToolsTests.m; sourceTree = "<group>"; };
+		939E1B1B1940BF1200BFC65C /* start-webdev.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "start-webdev.sh"; sourceTree = "<group>"; };
+		939E1B1C1940BF1200BFC65C /* stop-webdev.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "stop-webdev.sh"; sourceTree = "<group>"; };
+		939E1B1F1940C11600BFC65C /* Jpegoptim.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Jpegoptim.sh; sourceTree = "<group>"; };
+		939E1B211940C12400BFC65C /* Optipng.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Optipng.sh; sourceTree = "<group>"; };
+		939E1B231940C96700BFC65C /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		939E1B241940C96700BFC65C /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +126,14 @@
 		939E1AED1940BDE900BFC65C /* WebTools */ = {
 			isa = PBXGroup;
 			children = (
+				939E1B1B1940BF1200BFC65C /* start-webdev.sh */,
+				939E1B1C1940BF1200BFC65C /* stop-webdev.sh */,
+				939E1B1F1940C11600BFC65C /* Jpegoptim.sh */,
+				939E1B211940C12400BFC65C /* Optipng.sh */,
 				939E1AF91940BDE900BFC65C /* AppDelegate.h */,
 				939E1AFA1940BDE900BFC65C /* AppDelegate.m */,
+				939E1B231940C96700BFC65C /* LogViewController.h */,
+				939E1B241940C96700BFC65C /* LogViewController.m */,
 				939E1AFC1940BDE900BFC65C /* MainMenu.xib */,
 				939E1AFF1940BDE900BFC65C /* Images.xcassets */,
 				939E1AEE1940BDE900BFC65C /* Supporting Files */,
@@ -230,10 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939E1B201940C11600BFC65C /* Jpegoptim.sh in Resources */,
 				939E1AF21940BDE900BFC65C /* InfoPlist.strings in Resources */,
+				939E1B1D1940BF1200BFC65C /* start-webdev.sh in Resources */,
 				939E1B001940BDE900BFC65C /* Images.xcassets in Resources */,
+				939E1B221940C12400BFC65C /* Optipng.sh in Resources */,
 				939E1AF81940BDE900BFC65C /* Credits.rtf in Resources */,
 				939E1AFE1940BDE900BFC65C /* MainMenu.xib in Resources */,
+				939E1B1E1940BF1200BFC65C /* stop-webdev.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +275,7 @@
 			files = (
 				939E1AFB1940BDE900BFC65C /* AppDelegate.m in Sources */,
 				939E1AF41940BDE900BFC65C /* main.m in Sources */,
+				939E1B251940C96700BFC65C /* LogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
