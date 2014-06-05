@@ -45,7 +45,7 @@
 }
 
 - (void)executeScript:(NSString*)pathToScript {
-    [NSApp activateIgnoringOtherApps:YES];
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [_logWindow makeKeyAndOrderFront:self];
     
     NSPipe *pipe = [NSPipe pipe];
@@ -64,7 +64,7 @@
 }
 
 - (void)executeSecureScript:(NSString*)pathToScript {
-    [NSApp activateIgnoringOtherApps:YES];
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [_logWindow makeKeyAndOrderFront:self];
     
     NSString * output = nil;
