@@ -69,10 +69,32 @@
     [[NSApplication sharedApplication] orderFrontColorPanel:nil];
 }
 
+- (IBAction)compressJavascript:(id)sender {
+    NSOpenPanel *panel = [NSOpenPanel openPanel];
+	
+	[panel setCanChooseDirectories: NO];
+	[panel setCanChooseFiles: YES];
+	[panel setAllowsMultipleSelection: NO];
+	
+	if ([panel runModal] == NSOKButton) {
+        NSString *jsPath = [[panel URL] path];
+        
+        NSMutableArray *pathParts = [jsPath componentsSeparatedByString:@"/"];
+        NSUInteger lastPart = [pathParts count] - 1;
+        NSString *oldName = [jsPath lastPathComponent];
+        NSString *newName = [oldName stringByReplacingOccurrencesOfString:@".js" withString:@"-compiled.js"];
+        [pathParts replaceObjectAtIndex:lastPart withObject:newName];
+        NSString *compiledPath = [pathParts componentsJoinedByString:@"/"];
+
+        NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"closure-compiler" ofType:@"sh"];
+        NSString *pathToJar = [[NSBundle mainBundle] pathForResource:@"google-closure-compiler" ofType:@"jar"];
+        [self executeScript:pathToScript withArguments:[NSArray arrayWithObjects:pathToScript, pathToJar, jsPath, compiledPath, nil]];
+	}
+}
+
 - (void)executeScript:(NSString*)pathToScript {
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [_logWindow makeKeyAndOrderFront:self];
-    //[_logView changeTab:1];
     
     NSPipe *pipe = [NSPipe pipe];
     NSTask *script = [[NSTask alloc] init];
@@ -89,10 +111,28 @@
     [_logView insertIntoLog:output];
 }
 
+- (void)executeScript:(NSString*)pathToScript withArguments:(NSArray*)arguments {
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+    [_logWindow makeKeyAndOrderFront:self];
+    
+    NSPipe *pipe = [NSPipe pipe];
+    NSTask *script = [[NSTask alloc] init];
+    
+    [script setLaunchPath:@"/bin/sh"];
+    [script setArguments: arguments];
+    [script setStandardOutput: pipe];
+    [script setStandardError: pipe];
+    [script launch];
+    [script waitUntilExit];
+    
+    NSData *data = [[pipe fileHandleForReading] readDataToEndOfFile];
+    NSString *output = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+    [_logView insertIntoLog:output];
+}
+
 - (void)executeSecureScript:(NSString*)pathToScript {
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [_logWindow makeKeyAndOrderFront:self];
-    //[_logView changeTab:1];
     
     NSString * output = nil;
     NSString * processErrorDescription = nil;

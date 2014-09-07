@@ -12,6 +12,10 @@
 		9382097019BC7A390038A3E0 /* stop-apache.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9382096C19BC7A390038A3E0 /* stop-apache.sh */; };
 		9382097119BC7A390038A3E0 /* stop-mysql.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9382096D19BC7A390038A3E0 /* stop-mysql.sh */; };
 		9382097419BC7E890038A3E0 /* ColorConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9382097319BC7E890038A3E0 /* ColorConverter.m */; };
+		9382097A19BC9A5C0038A3E0 /* Prerequisites.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9382097919BC9A5C0038A3E0 /* Prerequisites.rtf */; };
+		93820A6119BCAFA10038A3E0 /* google-closure-compiler.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 93820A6019BCAFA10038A3E0 /* google-closure-compiler.jar */; settings = {ATTRIBUTES = (Required, ); }; };
+		93820A6419BCAFFC0038A3E0 /* closure-compiler.sh in Resources */ = {isa = PBXBuildFile; fileRef = 93820A6319BCAFFC0038A3E0 /* closure-compiler.sh */; };
+		93820A6519BCB76D0038A3E0 /* google-closure-compiler.jar in Resources */ = {isa = PBXBuildFile; fileRef = 93820A6019BCAFA10038A3E0 /* google-closure-compiler.jar */; };
 		939E1AE81940BDE900BFC65C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939E1AE71940BDE900BFC65C /* Cocoa.framework */; };
 		939E1AF21940BDE900BFC65C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 939E1AF01940BDE900BFC65C /* InfoPlist.strings */; };
 		939E1AF41940BDE900BFC65C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E1AF31940BDE900BFC65C /* main.m */; };
@@ -47,6 +51,9 @@
 		9382096D19BC7A390038A3E0 /* stop-mysql.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "stop-mysql.sh"; sourceTree = "<group>"; };
 		9382097219BC7E890038A3E0 /* ColorConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConverter.h; sourceTree = "<group>"; };
 		9382097319BC7E890038A3E0 /* ColorConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConverter.m; sourceTree = "<group>"; };
+		9382097919BC9A5C0038A3E0 /* Prerequisites.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Prerequisites.rtf; sourceTree = "<group>"; };
+		93820A6019BCAFA10038A3E0 /* google-closure-compiler.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "google-closure-compiler.jar"; sourceTree = "<group>"; };
+		93820A6319BCAFFC0038A3E0 /* closure-compiler.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "closure-compiler.sh"; sourceTree = "<group>"; };
 		939E1AE41940BDE900BFC65C /* WebTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939E1AE71940BDE900BFC65C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		939E1AEA1940BDE900BFC65C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -79,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93820A6119BCAFA10038A3E0 /* google-closure-compiler.jar in Frameworks */,
 				939E1AE81940BDE900BFC65C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,8 +114,17 @@
 				939E1B1C1940BF1200BFC65C /* stop-webdev.sh */,
 				939E1B1F1940C11600BFC65C /* Jpegoptim.sh */,
 				939E1B211940C12400BFC65C /* Optipng.sh */,
+				93820A6319BCAFFC0038A3E0 /* closure-compiler.sh */,
 			);
 			name = Scripts;
+			sourceTree = "<group>";
+		};
+		93820A6219BCAFAE0038A3E0 /* External libraries */ = {
+			isa = PBXGroup;
+			children = (
+				93820A6019BCAFA10038A3E0 /* google-closure-compiler.jar */,
+			);
+			name = "External libraries";
 			sourceTree = "<group>";
 		};
 		939E1ADB1940BDE900BFC65C = {
@@ -152,6 +169,7 @@
 		939E1AED1940BDE900BFC65C /* WebTools */ = {
 			isa = PBXGroup;
 			children = (
+				93820A6219BCAFAE0038A3E0 /* External libraries */,
 				935747A31940E9AA0097B237 /* Scripts */,
 				939E1AF91940BDE900BFC65C /* AppDelegate.h */,
 				939E1AFA1940BDE900BFC65C /* AppDelegate.m */,
@@ -174,6 +192,7 @@
 				939E1AF31940BDE900BFC65C /* main.m */,
 				939E1AF51940BDE900BFC65C /* WebTools-Prefix.pch */,
 				939E1AF61940BDE900BFC65C /* Credits.rtf */,
+				9382097919BC9A5C0038A3E0 /* Prerequisites.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -275,11 +294,14 @@
 				939E1B201940C11600BFC65C /* Jpegoptim.sh in Resources */,
 				939E1AF21940BDE900BFC65C /* InfoPlist.strings in Resources */,
 				9382096F19BC7A390038A3E0 /* start-mysql.sh in Resources */,
+				93820A6519BCB76D0038A3E0 /* google-closure-compiler.jar in Resources */,
+				93820A6419BCAFFC0038A3E0 /* closure-compiler.sh in Resources */,
 				939E1B1D1940BF1200BFC65C /* start-webdev.sh in Resources */,
 				939E1B001940BDE900BFC65C /* Images.xcassets in Resources */,
 				939E1B221940C12400BFC65C /* Optipng.sh in Resources */,
 				939E1AF81940BDE900BFC65C /* Credits.rtf in Resources */,
 				9382097019BC7A390038A3E0 /* stop-apache.sh in Resources */,
+				9382097A19BC9A5C0038A3E0 /* Prerequisites.rtf in Resources */,
 				939E1AFE1940BDE900BFC65C /* MainMenu.xib in Resources */,
 				9382096E19BC7A390038A3E0 /* start-apache.sh in Resources */,
 				939E1B1E1940BF1200BFC65C /* stop-webdev.sh in Resources */,

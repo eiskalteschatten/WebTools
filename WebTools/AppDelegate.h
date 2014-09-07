@@ -28,8 +28,10 @@
 - (IBAction)startMysql:(id)sender;
 - (IBAction)stopMysql:(id)sender;
 - (IBAction)openColorPicker:(id)sender;
+- (IBAction)compressJavascript:(id)sender;
 
 - (void)executeScript:(NSString*)pathToScript;
+- (void)executeScript:(NSString*)pathToScript withArguments:(NSArray*)arguments;
 - (void)executeSecureScript:(NSString*)pathToScript;
 
 - (BOOL)runProcessAsAdministrator:(NSString*)scriptPath
