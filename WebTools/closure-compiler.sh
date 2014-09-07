@@ -8,6 +8,11 @@
 
 echo "Starting Google Closure"
 
+
+ls -lh $2
+
 java -jar $1 --js $2 --js_output_file $3
+
+ls -lh $3
 
 echo "Done\n\n"
