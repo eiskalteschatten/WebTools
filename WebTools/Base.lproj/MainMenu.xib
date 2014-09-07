@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
@@ -88,7 +88,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="508" height="357"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="508" height="357"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -172,6 +172,13 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="qjq-Ur-9tD"/>
+                <menuItem title="Color PIcker..." id="iyj-La-d2N">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openColorPicker:" target="Voe-Tx-rLC" id="cGz-nq-4mW"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="GIU-CW-uSi"/>
                 <menuItem title="View Log" id="Au1-vY-EfS">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

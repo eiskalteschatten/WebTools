@@ -23,6 +23,7 @@
 - (IBAction)optiPng:(id)sender;
 - (IBAction)startWebDev:(id)sender;
 - (IBAction)stopWebDev:(id)sender;
+- (IBAction)openColorPicker:(id)sender;
 
 - (void)executeScript:(NSString*)pathToScript;
 - (void)executeSecureScript:(NSString*)pathToScript;

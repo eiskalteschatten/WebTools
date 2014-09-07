@@ -44,6 +44,11 @@
     [self executeSecureScript:pathToScript];
 }
 
+- (IBAction)openColorPicker:(id)sender {
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+    [[NSApplication sharedApplication] orderFrontColorPanel:nil];
+}
+
 - (void)executeScript:(NSString*)pathToScript {
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [_logWindow makeKeyAndOrderFront:self];
