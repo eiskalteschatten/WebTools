@@ -388,7 +388,7 @@ CA
                 </menuItem>
             </items>
         </menu>
-        <window title="WebTools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="mainWindow" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="WebTools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="webToolsWindow" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -649,7 +649,7 @@ CA
                     <constraint firstItem="5ar-Vz-unp" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="v5i-Ef-Lpa"/>
                 </constraints>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="5715E923-DE16-431A-A65E-744749B37610" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="WPz-KM-ocW">
+            <toolbar key="toolbar" implicitIdentifier="5715E923-DE16-431A-A65E-744749B37610" displayMode="iconOnly" sizeMode="regular" id="WPz-KM-ocW">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="4SW-WA-IOj"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="wp7-mM-up1"/>
