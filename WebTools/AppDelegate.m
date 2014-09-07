@@ -44,6 +44,26 @@
     [self executeSecureScript:pathToScript];
 }
 
+- (IBAction)startApache:(id)sender {
+    NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"start-apache" ofType:@"sh"];
+    [self executeSecureScript:pathToScript];
+}
+
+- (IBAction)stopApache:(id)sender {
+    NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"stop-apache" ofType:@"sh"];
+    [self executeSecureScript:pathToScript];
+}
+
+- (IBAction)startMysql:(id)sender {
+    NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"start-mysql" ofType:@"sh"];
+    [self executeSecureScript:pathToScript];
+}
+
+- (IBAction)stopMysql:(id)sender {
+    NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"stop-mysql" ofType:@"sh"];
+    [self executeSecureScript:pathToScript];
+}
+
 - (IBAction)openColorPicker:(id)sender {
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [[NSApplication sharedApplication] orderFrontColorPanel:nil];
@@ -52,6 +72,7 @@
 - (void)executeScript:(NSString*)pathToScript {
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [_logWindow makeKeyAndOrderFront:self];
+    //[_logView changeTab:1];
     
     NSPipe *pipe = [NSPipe pipe];
     NSTask *script = [[NSTask alloc] init];
@@ -71,6 +92,7 @@
 - (void)executeSecureScript:(NSString*)pathToScript {
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [_logWindow makeKeyAndOrderFront:self];
+    //[_logView changeTab:1];
     
     NSString * output = nil;
     NSString * processErrorDescription = nil;
@@ -106,7 +128,7 @@
         if ([errorInfo valueForKey:NSAppleScriptErrorNumber]) {
             NSNumber * errorNumber = (NSNumber *)[errorInfo valueForKey:NSAppleScriptErrorNumber];
             if ([errorNumber intValue] == -128)
-                *errorDescription = @"The administrator password is required to do this.";
+                *errorDescription = @"An administrator password is required to do this.";
         }
         
         if (*errorDescription == nil) {

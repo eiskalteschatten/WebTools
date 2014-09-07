@@ -15,6 +15,8 @@
 @implementation LogViewController
 
 - (void)awakeFromNib {
+    [self changeTab:0];
+    
     _standardDefaults = [NSUserDefaults standardUserDefaults];
            
     bool floatWindow = [_standardDefaults boolForKey:@"floatAboveWindows"];
@@ -56,6 +58,25 @@
 - (IBAction)openWindow:(id)sender {
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [_window makeKeyAndOrderFront:self];
+}
+
+- (IBAction)switchTab:(id)sender {
+    _clickedSegment = [sender selectedSegment];
+    
+    [self changeTab:_clickedSegment];
+}
+
+- (void)changeTab:(NSInteger)tabIndex {
+    [_tabView selectTabViewItemAtIndex:tabIndex];
+    [_tabControl setSelectedSegment:tabIndex];
+    
+//    if ([[[_tabView selectedTabViewItem] label]  isEqual: @"Lyrics"]) {
+//        [_window makeFirstResponder:_lyricsView];
+//    }
+}
+
+- (IBAction)clearLog:(id)sender {
+    [_logView setString:@""];
 }
 
 @end

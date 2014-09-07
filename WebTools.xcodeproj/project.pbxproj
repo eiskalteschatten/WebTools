@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9382096E19BC7A390038A3E0 /* start-apache.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9382096A19BC7A390038A3E0 /* start-apache.sh */; };
+		9382096F19BC7A390038A3E0 /* start-mysql.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9382096B19BC7A390038A3E0 /* start-mysql.sh */; };
+		9382097019BC7A390038A3E0 /* stop-apache.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9382096C19BC7A390038A3E0 /* stop-apache.sh */; };
+		9382097119BC7A390038A3E0 /* stop-mysql.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9382096D19BC7A390038A3E0 /* stop-mysql.sh */; };
+		9382097419BC7E890038A3E0 /* ColorConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9382097319BC7E890038A3E0 /* ColorConverter.m */; };
 		939E1AE81940BDE900BFC65C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939E1AE71940BDE900BFC65C /* Cocoa.framework */; };
 		939E1AF21940BDE900BFC65C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 939E1AF01940BDE900BFC65C /* InfoPlist.strings */; };
 		939E1AF41940BDE900BFC65C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E1AF31940BDE900BFC65C /* main.m */; };
@@ -36,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9382096A19BC7A390038A3E0 /* start-apache.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "start-apache.sh"; sourceTree = "<group>"; };
+		9382096B19BC7A390038A3E0 /* start-mysql.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "start-mysql.sh"; sourceTree = "<group>"; };
+		9382096C19BC7A390038A3E0 /* stop-apache.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "stop-apache.sh"; sourceTree = "<group>"; };
+		9382096D19BC7A390038A3E0 /* stop-mysql.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "stop-mysql.sh"; sourceTree = "<group>"; };
+		9382097219BC7E890038A3E0 /* ColorConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConverter.h; sourceTree = "<group>"; };
+		9382097319BC7E890038A3E0 /* ColorConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConverter.m; sourceTree = "<group>"; };
 		939E1AE41940BDE900BFC65C /* WebTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939E1AE71940BDE900BFC65C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		939E1AEA1940BDE900BFC65C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -87,6 +98,10 @@
 		935747A31940E9AA0097B237 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
+				9382096A19BC7A390038A3E0 /* start-apache.sh */,
+				9382096B19BC7A390038A3E0 /* start-mysql.sh */,
+				9382096C19BC7A390038A3E0 /* stop-apache.sh */,
+				9382096D19BC7A390038A3E0 /* stop-mysql.sh */,
 				939E1B1B1940BF1200BFC65C /* start-webdev.sh */,
 				939E1B1C1940BF1200BFC65C /* stop-webdev.sh */,
 				939E1B1F1940C11600BFC65C /* Jpegoptim.sh */,
@@ -143,6 +158,8 @@
 				939E1B231940C96700BFC65C /* LogViewController.h */,
 				939E1B241940C96700BFC65C /* LogViewController.m */,
 				939E1AFC1940BDE900BFC65C /* MainMenu.xib */,
+				9382097219BC7E890038A3E0 /* ColorConverter.h */,
+				9382097319BC7E890038A3E0 /* ColorConverter.m */,
 				939E1AFF1940BDE900BFC65C /* Images.xcassets */,
 				939E1AEE1940BDE900BFC65C /* Supporting Files */,
 			);
@@ -257,12 +274,16 @@
 			files = (
 				939E1B201940C11600BFC65C /* Jpegoptim.sh in Resources */,
 				939E1AF21940BDE900BFC65C /* InfoPlist.strings in Resources */,
+				9382096F19BC7A390038A3E0 /* start-mysql.sh in Resources */,
 				939E1B1D1940BF1200BFC65C /* start-webdev.sh in Resources */,
 				939E1B001940BDE900BFC65C /* Images.xcassets in Resources */,
 				939E1B221940C12400BFC65C /* Optipng.sh in Resources */,
 				939E1AF81940BDE900BFC65C /* Credits.rtf in Resources */,
+				9382097019BC7A390038A3E0 /* stop-apache.sh in Resources */,
 				939E1AFE1940BDE900BFC65C /* MainMenu.xib in Resources */,
+				9382096E19BC7A390038A3E0 /* start-apache.sh in Resources */,
 				939E1B1E1940BF1200BFC65C /* stop-webdev.sh in Resources */,
+				9382097119BC7A390038A3E0 /* stop-mysql.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +304,7 @@
 			files = (
 				939E1AFB1940BDE900BFC65C /* AppDelegate.m in Sources */,
 				939E1AF41940BDE900BFC65C /* main.m in Sources */,
+				9382097419BC7E890038A3E0 /* ColorConverter.m in Sources */,
 				939E1B251940C96700BFC65C /* LogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

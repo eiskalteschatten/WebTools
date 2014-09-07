@@ -23,6 +23,10 @@
 - (IBAction)optiPng:(id)sender;
 - (IBAction)startWebDev:(id)sender;
 - (IBAction)stopWebDev:(id)sender;
+- (IBAction)startApache:(id)sender;
+- (IBAction)stopApache:(id)sender;
+- (IBAction)startMysql:(id)sender;
+- (IBAction)stopMysql:(id)sender;
 - (IBAction)openColorPicker:(id)sender;
 
 - (void)executeScript:(NSString*)pathToScript;
