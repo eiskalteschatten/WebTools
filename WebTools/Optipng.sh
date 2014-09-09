@@ -7,4 +7,4 @@
 #  Copyright (c) 2014 Alex Seifert. All rights reserved.
 
 cd ~/Downloads
-/opt/local/bin/optipng *.png
+$1 *.png
