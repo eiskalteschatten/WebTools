@@ -32,6 +32,7 @@
 		939E1B201940C11600BFC65C /* Jpegoptim.sh in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B1F1940C11600BFC65C /* Jpegoptim.sh */; };
 		939E1B221940C12400BFC65C /* Optipng.sh in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B211940C12400BFC65C /* Optipng.sh */; };
 		939E1B251940C96700BFC65C /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E1B241940C96700BFC65C /* LogViewController.m */; };
+		93BFFA5019BF71DF00C7F245 /* sassc in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFA4F19BF71DF00C7F245 /* sassc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		939E1B211940C12400BFC65C /* Optipng.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Optipng.sh; sourceTree = "<group>"; };
 		939E1B231940C96700BFC65C /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
 		939E1B241940C96700BFC65C /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		93BFFA4F19BF71DF00C7F245 /* sassc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sassc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		93820A6219BCAFAE0038A3E0 /* External libraries */ = {
 			isa = PBXGroup;
 			children = (
+				93BFFA4F19BF71DF00C7F245 /* sassc */,
 				93820A6019BCAFA10038A3E0 /* google-closure-compiler.jar */,
 			);
 			name = "External libraries";
@@ -293,6 +296,7 @@
 			files = (
 				939E1B201940C11600BFC65C /* Jpegoptim.sh in Resources */,
 				939E1AF21940BDE900BFC65C /* InfoPlist.strings in Resources */,
+				93BFFA5019BF71DF00C7F245 /* sassc in Resources */,
 				9382096F19BC7A390038A3E0 /* start-mysql.sh in Resources */,
 				93820A6519BCB76D0038A3E0 /* google-closure-compiler.jar in Resources */,
 				93820A6419BCAFFC0038A3E0 /* closure-compiler.sh in Resources */,

@@ -437,7 +437,7 @@ CA
                         <tabViewItems>
                             <tabViewItem label="Tools" identifier="1" id="GCQ-Mj-tQd">
                                 <view key="view" id="lVO-7F-gLl">
-                                    <rect key="frame" x="0.0" y="0.0" width="847" height="190"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="902" height="190"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <box autoresizesSubviews="NO" fixedFrame="YES" title="Server" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="JlT-Gq-9kE">
