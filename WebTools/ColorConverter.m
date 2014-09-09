@@ -101,4 +101,24 @@
     return value;
 }
 
+- (IBAction)setColorFromColorWell:(id)sender {
+    //[someObjectWhoseColorYouWantToChange setColor:[sender color]];
+    
+    [[NSApp keyWindow] makeFirstResponder:_rgbText];
+    
+//    NSColor *color = [sender color];
+    
+    //[self convertColor:nil];
+}
+
+- (void)colorUpdate:(NSColorPanel*)colorPanel {
+    NSColor* color = colorPanel.color;
+   
+    CGFloat red = [color redComponent];
+    CGFloat green = [color greenComponent];
+    CGFloat blue = [color blueComponent];
+    
+    NSString *rgb = [NSString stringWithFormat:@"%f, %f, %f", red, green, blue];
+}
+
 @end

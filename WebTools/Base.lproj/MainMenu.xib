@@ -444,7 +444,7 @@ CA
                         <tabViewItems>
                             <tabViewItem label="Tools" identifier="1" id="GCQ-Mj-tQd">
                                 <view key="view" id="lVO-7F-gLl">
-                                    <rect key="frame" x="0.0" y="0.0" width="847" height="225"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="902" height="225"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <box autoresizesSubviews="NO" ambiguous="YES" misplaced="YES" title="Server" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="JlT-Gq-9kE">
@@ -539,6 +539,9 @@ CA
                                                         <rect key="frame" x="171" y="75" width="44" height="23"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="setColorFromColorWell:" target="4lH-VJ-yX4" id="XDF-wx-IEB"/>
+                                                        </connections>
                                                     </colorWell>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MxB-5v-Kvo">
                                                         <rect key="frame" x="16" y="87" width="29" height="17"/>
@@ -843,7 +846,7 @@ CA
                         <action selector="jpegOptim:" target="Voe-Tx-rLC" id="had-NY-e1k"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Change location..." id="xJa-7o-qOo">
+                <menuItem title="Change Location..." id="xJa-7o-qOo">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="setImageCompressionPath:" target="nSf-3O-f9D" id="bBT-Ng-qze"/>

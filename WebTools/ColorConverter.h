@@ -18,5 +18,7 @@
 - (IBAction)convertColor:(id)sender;
 - (NSString*)toHex:(NSInteger)number;
 - (NSString*)fromHex:(NSString*)number;
+- (IBAction)setColorFromColorWell:(id)sender;
+- (void)colorUpdate:(NSColorPanel*)colorPanel;
 
 @end
