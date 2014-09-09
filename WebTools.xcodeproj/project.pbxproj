@@ -32,6 +32,7 @@
 		939E1B201940C11600BFC65C /* Jpegoptim.sh in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B1F1940C11600BFC65C /* Jpegoptim.sh */; };
 		939E1B221940C12400BFC65C /* Optipng.sh in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B211940C12400BFC65C /* Optipng.sh */; };
 		939E1B251940C96700BFC65C /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E1B241940C96700BFC65C /* LogViewController.m */; };
+		93A9FC8419BF93EF002A6B53 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A9FC8319BF93EF002A6B53 /* Preferences.m */; };
 		93BFFA5019BF71DF00C7F245 /* sassc in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFA4F19BF71DF00C7F245 /* sassc */; };
 		93F5732519BF913000BA549B /* optipng in Resources */ = {isa = PBXBuildFile; fileRef = 93F5732419BF913000BA549B /* optipng */; };
 		93F5732719BF913B00BA549B /* jpegoptim in Resources */ = {isa = PBXBuildFile; fileRef = 93F5732619BF913B00BA549B /* jpegoptim */; };
@@ -82,6 +83,8 @@
 		939E1B211940C12400BFC65C /* Optipng.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Optipng.sh; sourceTree = "<group>"; };
 		939E1B231940C96700BFC65C /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
 		939E1B241940C96700BFC65C /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		93A9FC8219BF93EF002A6B53 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
+		93A9FC8319BF93EF002A6B53 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
 		93BFFA4F19BF71DF00C7F245 /* sassc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sassc; sourceTree = "<group>"; };
 		93F5732419BF913000BA549B /* optipng */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = optipng; sourceTree = "<group>"; };
 		93F5732619BF913B00BA549B /* jpegoptim */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jpegoptim; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				939E1AFC1940BDE900BFC65C /* MainMenu.xib */,
 				9382097219BC7E890038A3E0 /* ColorConverter.h */,
 				9382097319BC7E890038A3E0 /* ColorConverter.m */,
+				93A9FC8219BF93EF002A6B53 /* Preferences.h */,
+				93A9FC8319BF93EF002A6B53 /* Preferences.m */,
 				939E1AFF1940BDE900BFC65C /* Images.xcassets */,
 				939E1AEE1940BDE900BFC65C /* Supporting Files */,
 			);
@@ -340,6 +345,7 @@
 				939E1AF41940BDE900BFC65C /* main.m in Sources */,
 				9382097419BC7E890038A3E0 /* ColorConverter.m in Sources */,
 				939E1B251940C96700BFC65C /* LogViewController.m in Sources */,
+				93A9FC8419BF93EF002A6B53 /* Preferences.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,5 +6,7 @@
 #  Created by Alex Seifert on 05.06.14.
 #  Copyright (c) 2014 Alex Seifert. All rights reserved.
 
-cd ~/Downloads
-$1 *.png
+echo "Compressing images at $1"
+
+cd $1
+$2 *.png

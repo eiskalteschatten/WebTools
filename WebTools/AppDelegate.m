@@ -27,13 +27,17 @@
 - (IBAction)jpegOptim:(id)sender {
     NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"Jpegoptim" ofType:@"sh"];
     NSString *pathToExec = [[NSBundle mainBundle] pathForResource:@"jpegoptim" ofType:nil];
-    [self executeScript:pathToScript withArguments:[NSArray arrayWithObjects:pathToScript, pathToExec, nil]];
+    NSString *imagePath = [[NSUserDefaults standardUserDefaults] stringForKey:@"imageCompressionPath"];
+    
+    [self executeScript:pathToScript withArguments:[NSArray arrayWithObjects:pathToScript, imagePath, pathToExec, nil]];
 }
 
 - (IBAction)optiPng:(id)sender {
     NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"Optipng" ofType:@"sh"];
     NSString *pathToExec = [[NSBundle mainBundle] pathForResource:@"optipng" ofType:nil];
-    [self executeScript:pathToScript withArguments:[NSArray arrayWithObjects:pathToScript, pathToExec, nil]];
+    NSString *imagePath = [[NSUserDefaults standardUserDefaults] stringForKey:@"imageCompressionPath"];
+    
+    [self executeScript:pathToScript withArguments:[NSArray arrayWithObjects:pathToScript, imagePath, pathToExec, nil]];
 }
 
 - (IBAction)startWebDev:(id)sender {
