@@ -14,6 +14,7 @@
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     
     _statusImage = [NSImage imageNamed:@"menu-icon"];
+    [_statusImage setTemplate:YES];
     _statusHighlightImage = [NSImage imageNamed:@"menu-icon-alt"];
     
     [_statusItem setImage:_statusImage];
