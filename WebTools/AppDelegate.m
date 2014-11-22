@@ -23,6 +23,10 @@
     [_statusItem setMenu:_statusMenu];
     [_statusItem setToolTip:@"WebTools"];
     [_statusItem setHighlightMode:YES];
+    
+//    _logWindow.titlebarAppearsTransparent = true;
+//    _logWindow.movableByWindowBackground  = true;
+    _logWindow.titleVisibility = NSWindowTitleHidden;
 }
 
 - (IBAction)jpegOptim:(id)sender {
