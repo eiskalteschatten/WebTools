@@ -23,6 +23,7 @@
 - (IBAction)optiPng:(id)sender;
 - (IBAction)startWebDev:(id)sender;
 - (IBAction)stopWebDev:(id)sender;
+- (IBAction)apacheConfg:(id)sender;
 - (IBAction)startApache:(id)sender;
 - (IBAction)stopApache:(id)sender;
 - (IBAction)startMysql:(id)sender;

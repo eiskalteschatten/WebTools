@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <JavaScriptCore/JavaScriptCore.h>
+#import <WebKit/WebKit.h>
 
 @implementation AppDelegate
 
@@ -26,7 +28,7 @@
     
 //    _logWindow.titlebarAppearsTransparent = true;
 //    _logWindow.movableByWindowBackground  = true;
-    _logWindow.titleVisibility = NSWindowTitleHidden;
+//    _logWindow.titleVisibility = NSWindowTitleHidden;
 }
 
 - (IBAction)jpegOptim:(id)sender {
@@ -53,6 +55,13 @@
 - (IBAction)stopWebDev:(id)sender {
     NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"stop-webdev" ofType:@"sh"];
     [self executeSecureScript:pathToScript];
+}
+
+- (IBAction)apacheConfg:(id)sender {\
+    NSString *s = [NSString stringWithFormat:@"tell application \"Terminal\" to activate\ntell application \"System Events\" to keystroke \"t\" using command down\ntell application \"Terminal\" to do script \"cd %@\" in window 1", @"/etc/apache2"];
+    
+    NSAppleScript *as = [[NSAppleScript alloc] initWithSource: s];
+    [as executeAndReturnError:nil];
 }
 
 - (IBAction)startApache:(id)sender {
@@ -97,6 +106,31 @@
         [pathParts replaceObjectAtIndex:lastPart withObject:newName];
         NSString *compiledPath = [pathParts componentsJoinedByString:@"/"];
 
+//        NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"uglifyjs" ofType:@"js"];
+//        NSString *jsCode = [NSString stringWithContentsOfFile:pathToScript encoding:NSUTF8StringEncoding error:nil];
+    
+//        JSContext *context = [[JSContext alloc] init];
+//        //[context evaluateScript: pathToScript];
+//        [context evaluateScript: jsCode];
+//        JSValue *function = context[@"callUglify"];
+//        //JSValue* result = [function callWithArguments:@[jsPath, [@"-o " stringByAppendingString:compiledPath]]];
+//        JSValue* result = [function callWithArguments:@[[NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil]]];
+//        [result toString]; // -> Hello, World
+//    
+//        NSLog([result toString]);
+    
+//        NSString *function = [NSString stringWithFormat:@"callUglify(\"%@\")", [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil]];
+//    
+//        WebView *webView = [[WebView alloc] init];
+//        NSString *result = [webView stringByEvaluatingJavaScriptFromString:jsCode];
+        //[[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"uglify" ofType:@"html" inDirectory:@"UglifyJS-master"]]]];
+        //NSString *result = [webView stringByEvaluatingJavaScriptFromString:function];
+        
+        //id result = [webView evaluateWebScript:pathToScript];
+        //[win callWebScriptMethod:@"uglify" withArguments:@[jsPath]];
+
+//        NSLog([@"result: " stringByAppendingString:result]);
+        
         NSString *pathToScript = [[NSBundle mainBundle] pathForResource:@"closure-compiler" ofType:@"sh"];
         NSString *pathToJar = [[NSBundle mainBundle] pathForResource:@"google-closure-compiler" ofType:@"jar"];
         [self executeScript:pathToScript withArguments:[NSArray arrayWithObjects:pathToScript, pathToJar, jsPath, compiledPath, nil]];

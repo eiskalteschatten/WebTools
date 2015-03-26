@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9378B8C91AC49E5D00C49300 /* uglifyjs.js in Resources */ = {isa = PBXBuildFile; fileRef = 9378B8C81AC49E5D00C49300 /* uglifyjs.js */; };
+		9378B8CB1AC4A1E700C49300 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378B8C11AC48EBC00C49300 /* JavaScriptCore.framework */; };
+		9378B8CC1AC4A1EF00C49300 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378B8C41AC493A500C49300 /* WebKit.framework */; };
+		9378B8CD1AC4A1F500C49300 /* uglifyjs.js in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378B8C81AC49E5D00C49300 /* uglifyjs.js */; };
 		9382096E19BC7A390038A3E0 /* start-apache.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9382096A19BC7A390038A3E0 /* start-apache.sh */; };
 		9382096F19BC7A390038A3E0 /* start-mysql.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9382096B19BC7A390038A3E0 /* start-mysql.sh */; };
 		9382097019BC7A390038A3E0 /* stop-apache.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9382096C19BC7A390038A3E0 /* stop-apache.sh */; };
@@ -33,7 +37,6 @@
 		939E1B221940C12400BFC65C /* Optipng.sh in Resources */ = {isa = PBXBuildFile; fileRef = 939E1B211940C12400BFC65C /* Optipng.sh */; };
 		939E1B251940C96700BFC65C /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939E1B241940C96700BFC65C /* LogViewController.m */; };
 		93A9FC8419BF93EF002A6B53 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A9FC8319BF93EF002A6B53 /* Preferences.m */; };
-		93BFFA5019BF71DF00C7F245 /* sassc in Resources */ = {isa = PBXBuildFile; fileRef = 93BFFA4F19BF71DF00C7F245 /* sassc */; };
 		93F5732519BF913000BA549B /* optipng in Resources */ = {isa = PBXBuildFile; fileRef = 93F5732419BF913000BA549B /* optipng */; };
 		93F5732719BF913B00BA549B /* jpegoptim in Resources */ = {isa = PBXBuildFile; fileRef = 93F5732619BF913B00BA549B /* jpegoptim */; };
 /* End PBXBuildFile section */
@@ -49,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9378B8C11AC48EBC00C49300 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9378B8C41AC493A500C49300 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9378B8C81AC49E5D00C49300 /* uglifyjs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = uglifyjs.js; sourceTree = "<group>"; };
 		9382096A19BC7A390038A3E0 /* start-apache.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "start-apache.sh"; sourceTree = "<group>"; };
 		9382096B19BC7A390038A3E0 /* start-mysql.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "start-mysql.sh"; sourceTree = "<group>"; };
 		9382096C19BC7A390038A3E0 /* stop-apache.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "stop-apache.sh"; sourceTree = "<group>"; };
@@ -85,7 +91,6 @@
 		939E1B241940C96700BFC65C /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
 		93A9FC8219BF93EF002A6B53 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
 		93A9FC8319BF93EF002A6B53 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
-		93BFFA4F19BF71DF00C7F245 /* sassc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sassc; sourceTree = "<group>"; };
 		93F5732419BF913000BA549B /* optipng */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = optipng; sourceTree = "<group>"; };
 		93F5732619BF913B00BA549B /* jpegoptim */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jpegoptim; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +100,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9378B8CD1AC4A1F500C49300 /* uglifyjs.js in Frameworks */,
+				9378B8CC1AC4A1EF00C49300 /* WebKit.framework in Frameworks */,
+				9378B8CB1AC4A1E700C49300 /* JavaScriptCore.framework in Frameworks */,
 				93820A6119BCAFA10038A3E0 /* google-closure-compiler.jar in Frameworks */,
 				939E1AE81940BDE900BFC65C /* Cocoa.framework in Frameworks */,
 			);
@@ -131,9 +139,9 @@
 		93820A6219BCAFAE0038A3E0 /* External libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9378B8C81AC49E5D00C49300 /* uglifyjs.js */,
 				93F5732619BF913B00BA549B /* jpegoptim */,
 				93F5732419BF913000BA549B /* optipng */,
-				93BFFA4F19BF71DF00C7F245 /* sassc */,
 				93820A6019BCAFA10038A3E0 /* google-closure-compiler.jar */,
 			);
 			name = "External libraries";
@@ -161,6 +169,8 @@
 		939E1AE61940BDE900BFC65C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9378B8C41AC493A500C49300 /* WebKit.framework */,
+				9378B8C11AC48EBC00C49300 /* JavaScriptCore.framework */,
 				939E1AE71940BDE900BFC65C /* Cocoa.framework */,
 				939E1B061940BDE900BFC65C /* XCTest.framework */,
 				939E1AE91940BDE900BFC65C /* Other Frameworks */,
@@ -307,12 +317,12 @@
 			files = (
 				939E1B201940C11600BFC65C /* Jpegoptim.sh in Resources */,
 				939E1AF21940BDE900BFC65C /* InfoPlist.strings in Resources */,
-				93BFFA5019BF71DF00C7F245 /* sassc in Resources */,
 				9382096F19BC7A390038A3E0 /* start-mysql.sh in Resources */,
 				93820A6519BCB76D0038A3E0 /* google-closure-compiler.jar in Resources */,
 				93820A6419BCAFFC0038A3E0 /* closure-compiler.sh in Resources */,
 				93F5732719BF913B00BA549B /* jpegoptim in Resources */,
 				939E1B1D1940BF1200BFC65C /* start-webdev.sh in Resources */,
+				9378B8C91AC49E5D00C49300 /* uglifyjs.js in Resources */,
 				939E1B001940BDE900BFC65C /* Images.xcassets in Resources */,
 				939E1B221940C12400BFC65C /* Optipng.sh in Resources */,
 				939E1AF81940BDE900BFC65C /* Credits.rtf in Resources */,
@@ -481,6 +491,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebTools/WebTools-Prefix.pch";
 				INFOPLIST_FILE = "WebTools/WebTools-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,6 +505,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebTools/WebTools-Prefix.pch";
 				INFOPLIST_FILE = "WebTools/WebTools-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

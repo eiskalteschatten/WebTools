@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -505,6 +505,16 @@ CA
                                                             <action selector="stopWebDev:" target="Voe-Tx-rLC" id="wIg-vh-p8Z"/>
                                                         </connections>
                                                     </button>
+                                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zFv-GJ-gpl">
+                                                        <rect key="frame" x="77" y="18" width="102" height="19"/>
+                                                        <buttonCell key="cell" type="recessed" title="Apache config" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OHp-Rc-Ve1">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="systemBold" size="12"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="apacheConfg:" target="Voe-Tx-rLC" id="iJa-eF-Pod"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </view>
                                             <constraints>
@@ -661,90 +671,6 @@ CA
                                     </constraints>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="SASS" identifier="2" id="9yF-fw-iK5">
-                                <view key="view" id="yET-QK-X3q">
-                                    <rect key="frame" x="0.0" y="0.0" width="902" height="225"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <scrollView ambiguous="YES" misplaced="YES" autohidesScrollers="YES" horizontalLineScroll="27" horizontalPageScroll="10" verticalLineScroll="27" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkX-Bg-oEC">
-                                            <rect key="frame" x="0.0" y="46" width="847" height="157"/>
-                                            <clipView key="contentView" ambiguous="YES" misplaced="YES" id="8us-G4-SbI">
-                                                <rect key="frame" x="1" y="1" width="845" height="155"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <subviews>
-                                                    <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="25" id="dZ6-RB-e3c">
-                                                        <rect key="frame" x="0.0" y="0.0" width="845" height="27"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <size key="intercellSpacing" width="3" height="2"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                                                        <tableColumns>
-                                                            <tableColumn width="85.42578125" minWidth="40" maxWidth="1000" id="pSR-DQ-yAY">
-                                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
-                                                                    <font key="font" metaFont="smallSystem"/>
-                                                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                                    <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </tableHeaderCell>
-                                                                <segmentedCell key="dataCell" borderStyle="border" alignment="left" style="automatic" trackingMode="selectOne" id="kUq-SW-QwN">
-                                                                    <font key="font" metaFont="smallSystem"/>
-                                                                    <segments>
-                                                                        <segment label="Off" width="36"/>
-                                                                        <segment label="On" width="36" tag="1"/>
-                                                                    </segments>
-                                                                </segmentedCell>
-                                                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                            </tableColumn>
-                                                            <tableColumn width="753.5" minWidth="40" maxWidth="1000" id="XzM-8q-KtT">
-                                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
-                                                                    <font key="font" metaFont="smallSystem"/>
-                                                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                                                    <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </tableHeaderCell>
-                                                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="xqT-OB-o3T">
-                                                                    <font key="font" metaFont="system"/>
-                                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                </textFieldCell>
-                                                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                            </tableColumn>
-                                                        </tableColumns>
-                                                    </tableView>
-                                                </subviews>
-                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </clipView>
-                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="yqu-bM-3xR">
-                                                <rect key="frame" x="1" y="125" width="845" height="16"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </scroller>
-                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="GgH-Nh-aR5">
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </scroller>
-                                        </scrollView>
-                                        <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6g-D1-jWy">
-                                            <rect key="frame" x="-6" y="8" width="66" height="32"/>
-                                            <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Kpf-Yn-pd3">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                        <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8FJ-hc-GuO">
-                                            <rect key="frame" x="60" y="8" width="90" height="32"/>
-                                            <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kbN-Ol-yGF">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="f6g-D1-jWy" firstAttribute="top" secondItem="tkX-Bg-oEC" secondAttribute="bottom" constant="13" id="BUn-Wc-MlM"/>
-                                        <constraint firstItem="8FJ-hc-GuO" firstAttribute="leading" secondItem="f6g-D1-jWy" secondAttribute="trailing" constant="12" id="DrU-Cq-oP0"/>
-                                        <constraint firstItem="f6g-D1-jWy" firstAttribute="leading" secondItem="yET-QK-X3q" secondAttribute="leading" constant="20" id="XYb-wJ-3sZ"/>
-                                        <constraint firstItem="tkX-Bg-oEC" firstAttribute="top" secondItem="yET-QK-X3q" secondAttribute="top" constant="20" id="gFF-We-gpj"/>
-                                        <constraint firstItem="tkX-Bg-oEC" firstAttribute="leading" secondItem="yET-QK-X3q" secondAttribute="leading" constant="20" id="lfL-PN-S2l"/>
-                                        <constraint firstAttribute="trailing" secondItem="tkX-Bg-oEC" secondAttribute="trailing" constant="20" id="udE-mL-gJy"/>
-                                    </constraints>
-                                </view>
-                            </tabViewItem>
                         </tabViewItems>
                     </tabView>
                 </subviews>
@@ -758,40 +684,7 @@ CA
                     <constraint firstItem="5ar-Vz-unp" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="v5i-Ef-Lpa"/>
                 </constraints>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="5715E923-DE16-431A-A65E-744749B37610" displayMode="iconOnly" sizeMode="regular" id="WPz-KM-ocW">
-                <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="4SW-WA-IOj"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="wp7-mM-up1"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Blu-sb-To1"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="SI9-IR-SKg"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="yEN-Mt-onY"/>
-                    <toolbarItem implicitItemIdentifier="C0934648-E675-4E11-832C-46CD0699ADE9" label="Views" paletteLabel="Views" id="tni-xb-WsB">
-                        <nil key="toolTip"/>
-                        <size key="minSize" width="92" height="25"/>
-                        <size key="maxSize" width="110" height="28"/>
-                        <segmentedControl key="view" verticalHuggingPriority="750" id="uNM-gy-ldT">
-                            <rect key="frame" x="0.0" y="14" width="110" height="25"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedRounded" trackingMode="selectOne" id="enJ-qv-Vwf">
-                                <font key="font" metaFont="system"/>
-                                <segments>
-                                    <segment label="Tools" selected="YES"/>
-                                    <segment label="SASS" tag="1"/>
-                                </segments>
-                            </segmentedCell>
-                        </segmentedControl>
-                        <connections>
-                            <action selector="switchTab:" target="DtK-q4-bKK" id="XRh-JR-OdJ"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="2BCC5757-35E9-434D-8063-D998A3424A50" label="Preferences" paletteLabel="Preferences" tag="-1" image="NSPreferencesGeneral" id="Xhx-oL-WCA"/>
-                </allowedToolbarItems>
-                <defaultToolbarItems>
-                    <toolbarItem reference="yEN-Mt-onY"/>
-                    <toolbarItem reference="tni-xb-WsB"/>
-                    <toolbarItem reference="yEN-Mt-onY"/>
-                </defaultToolbarItems>
-            </toolbar>
+            <point key="canvasLocation" x="416" y="483"/>
         </window>
         <menu id="F6A-ws-rTa">
             <items>
@@ -853,7 +746,6 @@ CA
             <connections>
                 <outlet property="floatAboveWindows" destination="zr9-7S-JKe" id="7Rh-zB-uTQ"/>
                 <outlet property="logView" destination="rpZ-7R-uGH" id="4C6-3d-3cO"/>
-                <outlet property="tabControl" destination="uNM-gy-ldT" id="g9S-fR-rsr"/>
                 <outlet property="tabView" destination="5ar-Vz-unp" id="yHM-LF-wMq"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="q9v-QO-sVW"/>
             </connections>
@@ -871,7 +763,4 @@ CA
             </connections>
         </customObject>
     </objects>
-    <resources>
-        <image name="NSPreferencesGeneral" width="32" height="32"/>
-    </resources>
 </document>
